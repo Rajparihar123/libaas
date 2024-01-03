@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products | Libas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: black;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    left: 0;
+}
+.logo{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.nav-items a{
+    text-decoration: none;
+    padding: 10x;
+    margin-right: 40px;
+}
+.nav-items a:hover{
+    
+    color:bisque;
+}
+.search-bar {
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    width: 250px;
+    
+}
+.search-bar input{
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 4px 20px;
+    color: black;
+}
+::placeholder{
+    color:black;
+}
+
+.search-bar button{
+    border: none;
+    width: 50px;
+    height: 30px;
+    outline: none;
+    background:gray;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.background-img{
+    background-image: url("all\ photos\ of\ x\'zudio/proback.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    font-size :16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 12px 34px;
+    font-weight: bolder;
+}
+.hero-btn:hover{
+    border: 2px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    color: black;
+}
+h1{
+    color: yellow;
+    cursor: pointer;
+}
+.back-info{
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.products {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 10px;
+    
+}
+h2{
+    color:black;
+    font-size: 40px;
+}
+.box{
+    color: black;
+    border:1px solid black;
+    height: 400px;
+    width: 30%;
+}
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.box-img{
+    background-image: url("all\ photos\ of\ x\'zudio/men.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter:drop-shadow( 2px 3px 5px gray);
+}
+.shop-sec2{
+    display: flex;
+    justify-content: space-evenly;
+}
+h4{
+    color: black;
+    font-size: 30px;
+    padding-top: 100px;
+}
+.box-2{
+    color: black;
+    height: 420px;
+    width: 23%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.box-2:hover{
+    border:1px solid black;
+}
+h4{
+    padding-left: 30px;
+    padding-top: 100px;
+}
+p{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.box-img2{
+    background-image: url("all photos of x'zudio/women.jpg");
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter:drop-shadow( 2px 3px 5px gray);
+}
+.shop-sec3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-3{
+    color: black;
+    height: 420px;
+    width: 15%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.box-img3{
+    background-image: url("all\ photos\ of\ x\'zudio/kid.jpg");
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter:drop-shadow( 2px 3px 5px gray);
+}
+h5{
+    color: black;
+    padding-left: 30px;
+    font-size: 30px;
+}
+.shop-sec4{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0%;
+}
+.box-img4{
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    filter:drop-shadow( 2px 3px 5px gray);
+}
+.box-4{
+    color: black;
+    height: 260px;
+    width: 15%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+}
+
+.shop-btn{
+        display: inline-block;
+        text-decoration: none;
+        color: brown;
+        border: 2px solid black;
+        font-size :16px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        padding: 12px 34px;
+        font-weight: bolder;
+}
+.shop-btn:hover{
+    border: 2px solid white;
+    background: black;
+    transition: 1s;
+    color: white;
+}
+h9{
+    color: black;
+    font-size: 29px;
+}
+.shop-info{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.footer{
+    width: 100%;
+    height: 300px;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer1, .footer2,.footer3,.footer4,.footer5 li{
+    list-style: none;
+}
+.footer1 a, .footer2 a,.footer3 a,.footer4 a,.footer5 li a{
+    text-decoration: none;
+}
+h10{
+    font-weight: bolder;
+    
+}
+.footerb{
+    width: 100%;
+    height: 150px;
+    background: #282c31
+}
+.footerb1  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    
+}
+.footerb1 a{
+    text-decoration: none;
+    color: #d3d7da;
+    font-size: 16px;
+}
+.footerb2{
+    justify-content: center;
+    display: flex;
+    margin-top: 35px;
+    color: #d3d7da;
+}
+html{
+    scroll-behavior: smooth;
+}
+</style>
+
+
+    <div class="navbar">
+        <div class="logo"><a href="index.html">LIBAS</a></div>
+        <div class="search-bar">
+            <input type="text" placeholder="   search here....">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-items">
+            <a href="index.html">HOME</a>
+            <a href="products.html">PRODUCTS</a>
+            <a href="collection.html">COLLECTION</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="login.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </div>
+
+
+    <div class="background-img">
+        <div class="back-info">
+            <h1>BEST DEALS AVAILABLE</h1><br>
+            <a href="" class="hero-btn">SHOP NOW</a>
+        </div>
+    </div>
+
+
+
+    <div class="products">
+        <h2>Products we offer</h2>
+    </div>
+    <div class="shop-section">
+        <div class="box1 box">
+            <a href="#shop-sec2"><div class="box-img" style="background-image: url(all\ photos\ of\ x\'zudio/shoes.jpg);"></div></a>
+            <h1>Shoes</h1>
+
+        </div>
+        <div class="box2 box">
+           <a href="#shop-sec3"> <div class="box-img" style="background-image: url(all\ photos\ of\ x\'zudio/cap.jpg);"></div></a>
+            <h1>Caps</h1>
+        </div>
+        <div class="box3 box">
+           <a href="#shop-sec4"> <div class="box-img" style="background-image: url('all\ photos\ of\ x\'zudio/watch.jpg');"></div></a>
+            <h1>Watches</h1>
+        </div>
+    </div>
+    <h4 id="shop-sec2">NEW ARRIVAL</h4>
+    <div class="shop-sec2">
+        <div class="box1 box-2">
+            <div class="box-img2" style="background-image: url(all\ photos\ of\ x\'zudio/show1.jpg);"></div>
+            <p>price: $ 25.99</p>
+        </div>
+        <div class="box2 box-2">
+            <div class="box-img2" style="background-image: url(all\ photos\ of\ x\'zudio/show2.jpg);"></div>
+            <p>price: $ 35.99</p>
+        </div>
+        <div class="box3 box-2">
+            <div class="box-img2" style="background-image: url(all\ photos\ of\ x\'zudio/show3.jpg);"></div>
+            <p>price: $ 55.99</p>
+        </div>
+        <div class="box4 box-2">
+            <div class="box-img2" style="background-image: url(all\ photos\ of\ x\'zudio/show4.jpg);"></div>
+            <p>price: $ 15.99</p>
+        </div>
+    </div>
+    <h4 id="shop-sec3">BESTSELLERS</h4>
+    <div class="shop-sec3">
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap11.jpg);">
+            </div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap2.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap33.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap4.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap1.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-3">
+            <div class="box-img3" style="background-image: url(all\ photos\ of\ x\'zudio/cap55.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        </div>
+        <h5 id="shop-sec4">SPORTS & FITNESS</h5>
+    <div class="shop-sec4">
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w1.jpg);">
+            </div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w2.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w3.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w4.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w5.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+        <div class="box1 box-4">
+            <div class="box-img4" style="background-image: url(all\ photos\ of\ x\'zudio/w6.jpg);"></div>
+            <p>price: $20.99</p>
+        </div>
+    </div>
+    <div class="shop-info">
+        <center><h1>sale!!..... buy now to get so many discounts</h1></center><br>
+       <center> <a href="" class="shop-btn">SHOP NOW</a></center>
+    </div>
+    <div class="footer">
+        <div class="footer1">
+            <h10>SOCIAL MEDIA</h10>
+        <div class="ul"><br>
+           <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+           <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+           <li><a href=""><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+           <li><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+           <li><a href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+        </div>
+    </div>
+    <div class="footer2">
+        <h10>SPORTS</h10>
+        <div class="ul"><br>
+           <li> <a href="">Cricket</a></li>
+           <li> <a href="">Football</a></li>
+           <li> <a href="">Tennis</a></li>
+           <li> <a href="">Gym/traning</a></li>
+           <li> <a href="">Batminton</a></li>
+        </div>
+    </div>
+    <div class="footer3">
+        <h10>COLLECTION</h10>
+        <div class="ul"><br>
+            <li><a href="">NMD</a></li>
+            <li><a href="">Stan din</a></li>
+            <li><a href="">Parley</a></li>
+            <li><a href="">John horry</a></li>
+            <li><a href="">Carry miles</a></li>
+        </div>
+    </div>
+    <div class="footer4">
+        <h10>SUPPORT</h10>
+        <div class="ul"><br>
+            <li><a href="">Help</a></li>
+            <li><a href="">Shipping</a></li>
+            <li><a href="">Order tracking</a></li>
+            <li><a href="">Store locater</a></li>
+            <li><a href="">Fit guide</a></li>
+        </div>
+    </div>
+    <div class="footer5">
+        <h10>COMPANY INFO</h10>
+        <div class="ul"><br>
+            <li><a href="">About us</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Career</a></li>
+            <li><a href="">xizudiclub</a></li>
+            <li><a href="">Entity details</a></li>
+        </div>
+    </div>
+    </div>
+    <div class="footerb">
+        <div class="footerb1">
+            <a href="">Cooking setting</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">Cookings</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="footerb2">©2021 x'zudio India Marketing Pvt. Ltd</div>
+    </div>
+        </body>
+        </html>
